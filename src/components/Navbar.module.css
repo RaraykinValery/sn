@@ -1,0 +1,23 @@
+.nav {
+  grid-area: n;
+  background-color: #303030;
+  padding: 12px 0 10px 0;
+}
+
+.item {
+  margin: 0 0 5px 0;
+  padding: 3px 0 3px 15px;
+  border: 2px solid transparent
+}
+
+.item a {
+  font-size: 19px;
+  color: #27b1a4;
+  text-decoration: none;
+}
+
+.item:hover {
+  border: 2px solid #27b1a4; 
+  color: white;
+  transition: border-color 0.5s;
+}

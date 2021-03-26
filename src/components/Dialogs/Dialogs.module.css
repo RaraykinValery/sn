@@ -1,16 +1,14 @@
 .dialogs {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
 }
 
 .dialogsItems {
-    padding: 10px;
-}
-
-.dialogsItems .active {
-    color: white;
+    padding: 12px;
 }
 
 .messages {
     padding: 10px;
 }
+

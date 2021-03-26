@@ -1,0 +1,22 @@
+.friendsWrapper {
+    padding: 0 15px 0 15px;
+}
+
+.friendsWrapper h2 {
+    color: rgb(141, 202, 231);
+    margin: 0 0 10px 0;
+}
+
+.imgs {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.imgs img {
+    padding: 0 3px 0 3px;
+    margin: 0 0 8px 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}

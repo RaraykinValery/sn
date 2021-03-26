@@ -1,9 +1,9 @@
 import s from './ProfileInfo.module.css'
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
     return (
         <div>
-            <img className={s.profileImage} src="https://www.nationalgeographic.rs/files/reke_srbija_klimatske_promene_371644770.jpg" alt="" />
+            <img className={s.profileImage} src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/325466_1100-1100x628.jpg" alt="" />
             <div className={s.descriptionBlock}>
                 ava+descr
             </div>

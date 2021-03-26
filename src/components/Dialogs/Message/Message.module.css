@@ -1,0 +1,33 @@
+.message {
+    display: flex;
+    align-items: center;
+    margin: 0 0 12px 0;
+}
+
+.message img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+
+.me {
+    color: red;
+    justify-content: flex-end;
+}
+
+.me img {
+    order: 2;
+}
+
+.me span {
+    padding: 0 10px 0 64px;
+}
+
+.friend {
+
+}
+
+.friend img {
+    margin: 0 10px 0 0;
+}

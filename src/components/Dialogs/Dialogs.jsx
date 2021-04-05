@@ -6,11 +6,11 @@ import {updateNewMessageBodyCreator, sendMessageCreator} from '../../redux/state
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.messagesPage.dialogs
-        .map(d => <DialogItem name={d.name} id={d.id}/>);
-    let messagesElements = props.messagesPage.messages
-        .map(m => <Message message={m.message} from={m.from}/>);
-    let newMessageBody = props.state.newMessageBody;
+    let state = props.store.getState().messagesPage;
+
+    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id}/>);
+    let messagesElements = state.messages.map(m => <Message message={m.message} from={m.from}/>);
+    let newMessageBody = state.newMessageBody;
 
     let newMessageElement = React.createRef();
 
@@ -32,8 +32,9 @@ const Dialogs = (props) => {
                 {messagesElements}
                 <div className={s.newMessageText}>
                     <textarea value={newMessageBody} 
-                    ref={newMessageElement}></textarea>
-                    onChange={onNewMessageChange}
+                    ref={newMessageElement}
+                    onChange={onNewMessageChange}>
+                    </textarea>
                 </div>
                 <div className={s.commitButton}>
                     <button onClick={onSendMessageClick}>Send</button>
